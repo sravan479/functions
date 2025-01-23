@@ -1,0 +1,124 @@
+Functions:
+A function is a reusable of block of code
+It can be call any where program
+Reusable:using an existing code eith out writing it 
+You can use the same code with different arguments to get a result
+Key-word=function
+( )
+Parameters= values(variables) which are declared inside the () while 
+
+
+ function greet() {
+          console.log("hi sravan")
+        }
+        greet()
+        console.log("hi nandu")
+        greet()
+
+Output:
+hi sravan
+hi nandu
+Hi sravan
+function greet() {
+          console.log("hi sravan")
+        }
+        greet()
+        console.log("hi nandu")
+        greet()
+        console.log("hi harshini")
+        greet()
+
+Output:
+hi sravan
+hi nandu
+hi sravan
+ hi harshini
+ hi sravan
+function g(name){
+          console.log("hello"+name)
+        }
+        let name=prompt("Enter your name?")
+        g(name)
+
+Output:
+hello sravan
+function add(a,b){
+          console.log(a+b)
+        }
+        add(3,5)
+        add(7,3)
+Output:
+8
+10
+
+Function return:
+The return statement can be
+function addNumbers(a, b) {
+            return a + b;
+        }
+        let a = parseFloat(prompt("Enter the first number (a): "));
+        let b = parseFloat(prompt("Enter the second number (b): "));
+        let result = addNumbers(a, b);
+        document.write("The result is: " + result);
+Output:
+The result is: 48
+function a(aa,bb){
+          return aa+bb;
+        }
+        let n1=parseFloat(prompt("Enter a number1"))
+        let n2=parseFloat(prompt("Enter a number2"))
+        let result = a(n1, n2);
+        document.write("The result is: " + result);
+Output:
+The result is: 63
+Imp question
+Leap leap
+ Armstrong
+Fibno series
+Prime or not
+
+/* function greet() {
+          console.log("hi sravan")
+        }
+        greet()
+        console.log("hi nandu")
+        greet()
+        console.log("hi harshini")
+        greet()*/
+
+        /*function g(name){
+          console.log("hello"+name)
+        }
+        let name=prompt("Enter your name?")
+        g(name)*/
+        /*function add(a,b){
+          console.log(a+b)
+        }
+        add(3,5)
+        add(7,3)*/
+       /* function a(aa,bb){
+          return aa+bb;
+        }
+        let n1=parseFloat(prompt("Enter a number1"))
+        let n2=parseFloat(prompt("Enter a number2"))
+        let result = a(n1, n2);
+        document.write("The result is: " + result);
+        /*
+        function addNumbers(a, b) {
+            return a + b;
+        }
+        let a = parseFloat(prompt("Enter the first number (a): "));
+        let b = parseFloat(prompt("Enter the second number (b): "));
+        let result = addNumbers(a, b);
+        document.write("The result is: " + result);*/
+        
+
+        
+        
+    
+
+
+
+
+
+
