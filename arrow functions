@@ -1,0 +1,148 @@
+Arrow  functions:
+Es6 version
+ More readable and more structure
+annonymous function(lambda function)
+Without function name but they are assigned to a variable
+Example: arrow function without parameter
+ let c=()=>{
+          console.log("hi sravan")
+        }
+        c();
+Output:
+hi sravan
+With parameter:
+ let x=(x,y)=>{
+          console.log(x+y)
+
+        }
+        x(20,30)
+        x(40,50)
+    
+Output:
+50
+90
+let greet=x=>console.log(x)
+        greet('hello')
+    
+Output:
+Hello
+Without argument:
+let greet=()=>console.log("hello")
+      greet()
+
+Output: hello
+Arrow function as an expression:
+ let age = 18;
+      let welcome=(age<18)?
+      ()=>console.log('hi sravan'):
+      ()=>console.log('hello nandhu')
+      welcome()
+Output:
+Hello nandhu
+
+Synochourous  function:
+function task1(){
+        console.log("Task1: Start")
+
+      }
+      function task2(){
+        console.log("Task2: Start")
+
+      }
+      function task3(){
+        console.log("Task3: Start")
+
+      }
+      task1()
+      task2()
+      task3()
+Output:
+Task1: Start
+Task2: Start
+Task3: Start
+console.log("hi sravan");
+      setTimeout(()=>{
+        console.log("hello nandhu is waiting")
+      },5000);
+      console.log("i an in college")
+Output:
+hi sravan
+i an in college
+hello nandhu is waiting
+
+Call back function:
+ a callback function is a function
+
+Ex:
+function greet(name,callback){
+        console.log('hello,${name}!')
+        callback();
+      }
+      function sayGoodbye(){
+        console.log("goodbye")
+      }
+      greet("sam",sayGoodbye)
+
+Output:
+hello,${name}!
+goodbye
+
+// arrow functio without parameter
+       /* let c=()=>{
+          console.log("hi sravan")
+        }
+        c();*/
+//arrow function with parameter
+        /*let x=(x,y)=>{
+          console.log(x+y)
+          document.write(x+y)
+        }
+        x(20,30)
+        x(40,50)*/
+//using one parameter
+       /* let greet=x=>console.log(x)
+        greet('hello')*/
+      // without argument
+      /*let greet=()=>console.log("hello")
+      greet()*/
+
+      // arrow function as an expression
+      /*let age = 18;
+      let welcome=(age<18)?
+      ()=>console.log('hi sravan'):
+      ()=>console.log('hello nandhu')
+      welcome()*/
+
+      /*function task1(){
+        console.log("Task1: Start")
+
+      }
+      function task2(){
+        console.log("Task2: Start")
+
+      }
+      function task3(){
+        console.log("Task3: Start")
+
+      }
+      task1()
+      task2()
+      task3()*/
+
+      /*console.log("hi sravan");
+      setTimeout(()=>{
+        console.log("hello nandhu is waiting")
+      },5000);
+      console.log("i an in college")*/
+
+      function greet(name,callback){
+        console.log('hello,${name}!')
+        callback();
+      }
+      function sayGoodbye(){
+        console.log("goodbye")
+      }
+      greet("sam",sayGoodbye)
+
+
+
