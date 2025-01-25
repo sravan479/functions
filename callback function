@@ -1,0 +1,108 @@
+Call back function:
+ a callback function is a function
+
+Ex:
+function greet(name,callback){
+        console.log('hello,${name}!')
+        callback();
+      }
+      function sayGoodbye(){
+        console.log("goodbye")
+      }
+      greet("sam",sayGoodbye)
+
+Output:
+hello,${name}!
+goodbye
+
+•	You can pass the callback function as argument to another function
+•	Execution: the function receiving the callback will execute the callback at some point during its execution(often at the end or after an asynchronous operation is done)
+•	Example:
+
+function mainFunction(callback){
+        console.log("Executing main Function")
+        callback()
+      }
+      function callbackFunction(){
+        console.log("callbackfunction executed")
+            }
+            mainFunction(callbackFunction)
+
+explanation:
+mainFunction takes a callback as parameter
+callback function is passed to main function
+inside the mainfunction ,the call Function function is called with callback()
+output:
+Executing main Function
+callbackfunction executed
+ex-2
+function greet(name , callback){
+              console.log("hello"+name);
+              callback();
+
+            }
+            function goodbye(){
+              console.log(" a very good boy!")
+            }
+            greet("sravan",goodbye)
+output:
+hellosravan
+a very good boy!
+Using anonymous 
+function greet(name , callback){
+    console.log("hello " + name);
+    callback();
+}
+
+greet("sravan", function() {
+    console.log(" a very good boy!");
+});
+
+Explain: we didn’t pass a named function like goodbye;
+Instead of that we define an anonymous function directly within in the 
+Output:
+hello sravan
+a very good boy!
+
+
+
+ /*function mainFunction(callback){
+        console.log("Executing main Function")
+        callback()
+      }
+      function callbackFunction(){
+        console.log("callbackfunction executed")
+            }
+            mainFunction(callbackFunction)*/
+
+            /*function greet(name , callback){
+              console.log("hello"+name);
+              callback();
+
+            }
+            function goodbye(){
+              console.log(" a very good boy!")
+            }
+            greet("sravan",goodbye) */
+
+            function greet(name , callback){
+    console.log("hello " + name);
+    callback();
+}
+
+greet("sravan", function() {
+    console.log(" a very good boy!");
+});
+
+
+
+
+
+      
+
+
+
+
+
+
+
