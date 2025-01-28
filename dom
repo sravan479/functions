@@ -1,0 +1,104 @@
+Dom (document object model)
+It is a programming interface in web development that allows us to interact and manipulate(change) the html documents.
+When the webpage is loaded , the browser creates the Dom of the webpage.
+
+When an html file is loaded into the browser  ,the java script cannot understand the html document directly.
+DOM: is basically the representation of same html document but in a tree_ like structure composed of objects
+HTML Dom it allow java script to access (to get) and modify all the elements in HTML document 
+
+Key points:
+1)Structure: the Dom represents the structure of HTML document as tree;
+Each node in a tree represents in the element , an attribute , text
+2)manipulation: using js , you can interact with element (button , h , p), we can modify ,add ,remove elements change styles;
+3)Event handling
+4)w3c-world wide web consortium
+</head>
+<body>
+<h1>I am Hyd </h1>
+</body>
+</head>
+
+
+In Dom all html elements are defined objects
+Property: is a value that are you can set to the objects
+(like changing content of  an html element)
+Method: an action
+(like add or delete)
+
+Methods  of document object:
+•	Getting an element by id 
+•	Getting an element by class: Returns all the elements having the same class name, returns in the form of html collections object
+•	Getting an element by tag name
+•	Getting an element by query selector
+
+<h1 class="a">Mallikarjunarao</h1>
+<h1 class="b">gopi</h1>
+<h1 class="c">ganesh</h1>
+<h1 class="d">nani</h1>
+<h1 class="e">yash</h1>
+<h1 class="f">raviteja</h1>
+<h1 class="g">venky</h1>
+<h1 class="h">narendra</h1>
+<h1 class="i">anwar</h1>
+<h1 class="j">chandra</h1>
+<h1 class="k">sravan</h1>
+<style>
+.a{
+    color: green;
+    text-align: center;
+
+}
+.b{
+    color: red;
+    text-align: center;
+    
+}
+.c{
+    color: black;
+    text-align: center;
+    
+}
+.d{
+    color: blue;
+    text-align: center;
+    
+}
+.e{
+    color: navy;
+    text-align: center;
+    
+}
+.f{
+    color: yellow;
+    text-align: center;
+    
+}
+.g{
+    color: orange;
+    text-align: center;
+    
+}
+.h{
+    color: green;
+    text-align: center;
+    
+}
+.i{
+    color: red;
+    text-align: center;
+    
+}
+.j{
+    color: aqua;
+    text-align: center;
+    
+}
+.k{
+    color: violet;
+    text-align: center;
+    
+}
+
+</style>
+
+
