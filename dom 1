@@ -1,0 +1,79 @@
+Methods  of document object:
+•	Getting an element by id 
+•	Getting an element by class name: Returns all the elements having the same class name, returns in the form of html collections object
+An html collection is array like list of HTML element length property provides the size of the collection   
+let x= document.getElementsByClassName('a')
+        for(let i=0; i<x.length;i++){
+            console.log(x[i])
+        }
+                                                                                                                                                                                                                                                                                                                                         
+
+
+•	Getting an element by tag name
+•	let x=document.getElementsByTagName('hi')
+•	        console.log(x)
+•	
+•	        for(let i=0; i<x.length;i++){
+•	            console.log(x[i])
+•	        }
+
+•	Getting an element by query selector
+
+	Query selector : used to select HTML elements by its class name ,tag name; it selects only the first element
+Example
+  let x=document.querySelector('hi')
+        console.log(x)
+
+
+
+	Query selector all: used to select HTML elements by its class name ,tag name;
+
+
+
+Example:
+let x=document.querySelectorAll('hi')
+        console.log(x)
+manipulate elements:
+ to create a HTML element:
+---- to createElement()
+---- document>createElement()
+---- the method takes an HTML element tag name as string Parameter
+Example:
+let t=document.createElement('h2')
+        t.className='tt'
+        t.textContent="iam in hyd"
+        console.log(t)
+/*() let x= document.getElementsByClassName('a')
+        for(let i=0; i<x.length;i++){
+            console.log(x[i])
+        }*/
+
+
+       /* let x=document.getElementsByTagName('hi')
+        console.log(x)
+
+        for(let i=0; i<x.length;i++){
+            console.log(x[i])
+        }*/
+
+       /* let x=document.querySelector('hi')
+        console.log(x)*/
+
+
+       /* let x=document.querySelectorAll('hi')
+        console.log(x) */
+
+        let t=document.createElement('h2')
+        t.className='tt'
+        t.textContent="iam in hyd"
+        console.log(t)
+
+
+    </script>
+    
+</body>
+</html>
+
+
+\
+
