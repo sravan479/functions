@@ -1,0 +1,100 @@
+1/02/2025
+	Javascript:
+Let ,var ,const
+	React js:
+	Spring boot java :
+	Mysql:
+
+
+	Javascript revision questions:
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Document</title>
+	</head>
+	<body>
+	    
+	    <script>
+	        let age = parseInt(prompt("Enter your age:"))
+	        
+	        if(age>=18 ){
+	            let citizen = confirm("Are you a citizen?")
+	        let passedCitizenTest = confirm("Have you passed citizen test?")
+	            document.write("You are eligible to vote")
+	            
+	            if(age>=18 && !citizen && passedCitizenTest){
+	                document.write("You are eligible to vote")
+	            }
+	            
+	        }else{
+	            document.write("You are not eligible to vote")
+	        }
+	    </script>
+	</body>
+	</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote Eligibility Checker</title>
+</head>
+<body>
+
+  <h1> Voting Eligibility System</h1>
+  
+  <label for="age">Enter your age:</label>
+  <input type="number" id="age" placeholder="Age" required><br><br>
+
+  <label for="citizen">Are you a citizen? (yes/no):</label>
+  <input type="text" id="citizen" placeholder="yes/no" required><br><br>
+
+  <label for="citizenshipTest">Did you pass the citizenship test? (yes/no):</label>
+  <input type="text" id="citizenshipTest" placeholder="yes/no" required><br><br>
+
+  <button onclick="checkEligibility()">Check Eligibility</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkEligibility() {
+      
+      const age = parseInt(document.getElementById('age').value);
+      const isCitizen = document.getElementById('citizen').value.toLowerCase() === 'yes';
+      const passedCitizenshipTest = document.getElementById('citizenshipTest').value.toLowerCase() === 'yes';
+      let resultMessage = '';
+
+      
+      if (age < 18) {
+        resultMessage = "You are not eligible to vote because you are under 18.";
+      } else if (isCitizen) {
+        resultMessage = "You are eligible to vote because you are a citizen.";
+      } else if (passedCitizenshipTest) {
+        resultMessage = "You are eligible to vote because you passed the citizenship test.";
+      } else {
+        resultMessage = "You are not eligible to vote.";
+      }
+
+      
+      document.getElementById('result').textContent = resultMessage;
+    }
+  </script>
+
+</body>
+</html>
+Output:
+Voting Eligibility System
+Enter your age: 
+
+Are you a citizen? (yes/no):  
+
+Did you pass the citizenship test? (yes/no):  
+
+Check Eligibility
+You are eligible to vote because you are a citizen.
+
+
