@@ -1,0 +1,64 @@
+
+Functional component
+Const
+[statevariable,setstatefunction]=usestate(intialValue)
+State var—hold the current state eg: name ,color
+Set state function: a function which is used to update the state
+Intial value: the intial value of the state variable  when the component first renders.
+
+
+import React, { useState } from "react";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px", fontFamily: "Arial, sans-serif" }}>
+      <h2>Count: {count}</h2>
+      <button 
+        onClick={() => setCount(count + 1)} 
+        style={{ margin: "5px", padding: "10px", fontSize: "16px", cursor: "pointer" }}
+      >
+        Increment
+      </button>
+      <button 
+        onClick={() => setCount(count - 1)} 
+        style={{ margin: "5px", padding: "10px", fontSize: "16px", cursor: "pointer" }}
+      >
+        Decrement
+      </button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
